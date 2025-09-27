@@ -30,6 +30,11 @@ public class MetricsSocket {
                         "firmwareVersion", LabsFlow.getOperatingSystem().getVersionInfo(),
                         "firmwareManifacturer", LabsFlow.getOperatingSystem().getManufacturer(),
                         "sysProcessCount", LabsFlow.getOperatingSystem().getProcessCount(),
+                        "sysUpTime", LabsFlow.getOperatingSystem().getSystemUptime(),
+                        "sysBitness", LabsFlow.getOperatingSystem().getBitness(),
+                        "systemBootTime", LabsFlow.getOperatingSystem().getSystemBootTime()
+                ),
+                Map.of(
                         "netDnsServers", LabsFlow.getNetworkParams().getDnsServers(),
                         "netDomain", LabsFlow.getNetworkParams().getDomainName(),
                         "netHost", LabsFlow.getNetworkParams().getHostName(),
